@@ -1,0 +1,12 @@
+2023-07-17 20:17:41,391 - INFO - Connecting to MongoDB
+2023-07-17 20:17:41,409 - INFO - Creating database
+2023-07-17 20:17:41,423 - INFO - Database 'Facebook_Data' already exists.
+2023-07-17 20:17:41,423 - INFO - Sending request to scraping-bot.io
+2023-07-17 20:18:41,874 - INFO - <html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+

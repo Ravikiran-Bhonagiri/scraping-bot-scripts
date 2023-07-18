@@ -8,6 +8,7 @@ from utils.utility_functions import flatten_custom_data
 from utils.mongo_db_utility import MongoDBUtility
 
 #########################################################################################
+
 username = USER_NAME
 apiKey = API_KEY
 scraper = 'facebookProfile'
@@ -25,6 +26,7 @@ headers = {
     'Content-Type': "application/json"
 }
 
+
 ##########################################################################################
 
 logger.info("Connecting to MongoDB")
@@ -38,6 +40,7 @@ response = requests.request("POST", apiEndPoint, data=payload, auth=(username, a
 if response.status_code == 200:
     logger.info(response.json())
     logger.info(response.json()["responseId"])
+
     responseId = response.json()["responseId"]
 
     pending = True
@@ -47,6 +50,7 @@ if response.status_code == 200:
         sleep(5)
         finalResponse = requests.request("GET", apiEndPointResponse + "scraper=" + scraper + "&responseId=" + responseId
                                          , auth=(username, apiKey))
+
         
         result = finalResponse.json()
 
@@ -81,5 +85,3 @@ if response.status_code == 200:
 else:
     logger.info(response.text)
 
-
-############################################################################################

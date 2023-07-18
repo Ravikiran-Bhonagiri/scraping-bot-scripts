@@ -1,5 +1,5 @@
 from config import logger, MONGO_URI, DATABASE_NAME
-from mongo_db_utility import MongoDBUtility
+from utils.mongo_db_utility import MongoDBUtility
 
 
 def flatten_custom_data(dataList):
