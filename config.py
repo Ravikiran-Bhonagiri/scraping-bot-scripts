@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 
 USER_NAME = 'ravikb'
-API_KEY = 'yukdDrHCjz1cQl5yiQxySauns'
+API_KEY = 'gggggggggggggggggggggggggggg'
 
 MONGO_URI = "mongodb://localhost:27017/"
 DATABASE_NAME = "Facebook_Data"
